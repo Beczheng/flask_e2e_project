@@ -34,7 +34,7 @@ GOOGLE_CLIENT_SECRET =
 
 ## 4. Docker (Steps)
 - Create a Docker file within your app folder and name it `Dockerfile`. Copy [this code](https://github.com/Beczheng/flask_e2e_project/blob/main/app/dockerfile).
-- Lastly, create a text file and name it `requirements.txt`. Copy [this code](https://github.com/Beczheng/flask_e2e_project/blob/main/app/requirements.txt).
+- Create a text file and name it `requirements.txt`. Copy [this code](https://github.com/Beczheng/flask_e2e_project/blob/main/app/requirements.txt).
 - In your Cloud Shell terminal, type `docker build -t <name of image> .`. This will build an image.
 - Type `docker images`. This will show a list of your images.
 - Type `docker run -d -p <port1>:<port2> <name of image>`. This will run your image in a container. 
@@ -59,7 +59,7 @@ Once you've logged in through Google, it will bring you to this page:
 
 ![Screenshot 2023-12-18 224934](https://github.com/Beczheng/flask_e2e_project/assets/123920253/1437a162-b7b5-4738-a74c-6f2637e85ade)
 
-Then, on this page, enter the following routes:
+On this page, enter the following routes:
 - https://beckieflaskapp.azurewebsites.net/home (does work)
 - https://beckieflaskapp.azurewebsites.net/doctors (does not work, only works locally)
 - https://beckieflaskapp.azurewebsites.net/contact (does work)
