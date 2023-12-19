@@ -1,7 +1,9 @@
 # flask_e2e_project
 
 ## 1. Flask Application
-My Flask application serves as a platform for presenting information about doctors affiliated with a hospital. The application displays personal information such as their first name, last name, date of birth, address, phone number, and specialization. The data is generated using the Faker package and is stored in tables created within the MySQL Workbench database.
+My Flask application serves as a platform for presenting information about doctors affiliated with a hospital. The application displays personal information such as their first name, last name, date of birth, address, phone number, and specialization. The data is generated using the Faker package and is stored in tables created within the MySQL Workbench database. In addition, my Flask backend includes an API service with a single endpoint capable of retrieving various doctor tables.
+
+**Flask application link: beckieflaskapp.azurewebsites.net**
 
 ## 2. Technologies Used
 - **API Service:** Backend
@@ -15,7 +17,7 @@ My Flask application serves as a platform for presenting information about docto
 - **Sentry.io:** Debugging and logging
 - **Tailwind:**: Frontend styling
 
-## 3. Template of .Env 
+## 3. Template of .Env File
 
 ```
 DB_URL = 
@@ -41,3 +43,6 @@ GOOGLE_CLIENT_SECRET =
 - Type `docker stop <container ID>`. This will stop your container.
 - Type `docker rm <container ID>`. This will remove your container.
 - Type `docker system prune -a -f`. This will clean and remove everything.
+
+## 5. Errors
+- 
