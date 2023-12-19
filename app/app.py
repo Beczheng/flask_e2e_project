@@ -38,14 +38,14 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_PORT = int(os.getenv("DB_PORT", 3306))
 DB_CHARSET = os.getenv("DB_CHARSET", "utf8mb4")
 
-# Create a database connection string
-connect_args={'ssl':{'fake_flag_to_enable_tls': True}}
-connection_string = f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}'
+# Create a connection string
+conn_string = (
+    f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}"
+    f"?charset={DB_CHARSET}"
+)
 
 # Create a database engine
-engine = create_engine(
-        connection_string,
-        connect_args=connect_args)
+engine = create_engine(conn_string, echo=False)
 
 # Define a route for the login page
 @app.route('/')
