@@ -15,7 +15,7 @@ My Flask application serves as a platform for presenting information about docto
 - **Sentry.io:** Debugging and logging
 - **Tailwind:**: Frontend styling
 
-## 3. Template of .env 
+## 3. Template of .Env 
 
 ```
 DB_URL = 
