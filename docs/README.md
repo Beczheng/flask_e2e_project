@@ -3,7 +3,7 @@
 ## 1. Flask Application
 My Flask application serves as a platform for presenting information about doctors affiliated with a hospital. The application displays personal information such as their first name, last name, date of birth, address, phone number, and specialization. The data is generated using the Faker package and is stored in tables created within the MySQL Workbench database. In addition, my Flask backend includes an API service with a single endpoint capable of retrieving various doctor tables.
 
-**Flask application link: beckieflaskapp.azurewebsites.net**
+**Flask application link:** https://beckieflaskapp.azurewebsites.net
 
 ## 2. Technologies Used
 - **API Service:** Backend
