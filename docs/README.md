@@ -31,8 +31,8 @@ GOOGLE_CLIENT_SECRET =
 ```
 
 ## 4. Docker (Steps)
-- Create a Docker file within your app folder and name it `Dockerfile`. Copy [this code]().
-- Lastly, create a text file and name it `requirements.txt`. Copy [this code]().
+- Create a Docker file within your app folder and name it `Dockerfile`. Copy [this code]('github.come/Beczheng/flask_e2e_project/blob/main/app/dockerfile').
+- Lastly, create a text file and name it `requirements.txt`. Copy [this code]('github.come/Beczheng/flask_e2e_project/blob/main/app/requirements.txt').
 - In your Cloud Shell terminal, type `docker build -t <name of image> .`. This will build an image.
 - Type `docker images`. This will show a list of your images.
 - Type `docker run -d -p <port1>:<port2> <name of image>`. This will run your image in a container. 
