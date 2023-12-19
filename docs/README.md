@@ -44,7 +44,15 @@ GOOGLE_CLIENT_SECRET =
 - Type `docker rm <container ID>`. This will remove your container.
 - Type `docker system prune -a -f`. This will clean and remove everything.
 
-## 5. Errors
+## 5. Deployment on Azure App Service (Steps)
+- In your Cloud Shell terminal, type `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`. This will install the Azure CLI.
+- Type `az` to check if Azure CLI is installed.
+- Type `az login --use-device-code`. A link with a code will appear. Click on the link and enter the code. Then, login to your Microsoft Azure account. This will give Cloud Shell permission to access your Azure account.
+- Type `az account list --output table`. Make sure that you are using the correct subscription. If not, type `az account set --subscription <SubscriptionId>` to change it.
+- Type `az group list` to double check everything.
+- Type `az webapp up --name <app name> --runtime PYTHON:3.9 --sku B1 --resource-group <name of resource group`. This will create a webapp for your Flask app.
+
+## 6. Errors
 I encountered difficulties deploying the Flask application. When accessing the Flask application's URL, only the home page and contact page are visible by directly typing in their routes. Unfortunately, the doctors page is only accessible locally and is not visible on the deployed site. To view the screenshots of my Flask application, click [here](https://github.com/Beczheng/flask_e2e_project/tree/main/docs).
 
 Once you've logged in through Google, it will bring you to this page:
