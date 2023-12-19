@@ -39,13 +39,13 @@ DB_PORT = int(os.getenv("DB_PORT", 3306))
 DB_CHARSET = os.getenv("DB_CHARSET", "utf8mb4")
 
 # Create a database connection string
-conn_string = (
-    f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}"
-    f"?charset={DB_CHARSET}"
-)
+connect_args={'ssl':{'fake_flag_to_enable_tls': True}}
+connection_string = f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_DATABASE}'
 
 # Create a database engine
-engine = create_engine(conn_string, echo=False)
+engine = create_engine(
+        connection_string,
+        connect_args=connect_args)
 
 # Define a route for the login page
 @app.route('/')
@@ -113,15 +113,6 @@ def contact():
     fake_address = fake.address()
     fake_phone = fake.phone_number()
     return render_template('contact.html', location=fake_address, phone=fake_phone)
-
-# Define a route for the user dashboard page
-@app.route('/dashboard/')
-def dashboard():
-    user = session.get('user')
-    if user:
-        return render_template('dashboard.html', user=user)
-    else:
-        return redirect('/logout')
 
 # Define a route for the logout page
 @app.route('/logout')
