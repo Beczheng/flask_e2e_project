@@ -53,7 +53,7 @@ Once you've logged in through Google, it will bring you to this page:
 
 
 Then, enter the following routes:
-https://beckieflaskapp.azurewebsites.net/home (does work)
-https://beckieflaskapp.azurewebsites.net/doctors (does not work, only works locally)
-https://beckieflaskapp.azurewebsites.net/contact (does work)
-https://beckieflaskapp.azurewebsites.net/api?specialization=doctors_cardiology (does not work, only works locally)
+- https://beckieflaskapp.azurewebsites.net/home (does work)
+- https://beckieflaskapp.azurewebsites.net/doctors (does not work, only works locally)
+- https://beckieflaskapp.azurewebsites.net/contact (does work)
+- https://beckieflaskapp.azurewebsites.net/api?specialization=doctors_cardiology (does not work, only works locally)
