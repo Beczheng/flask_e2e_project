@@ -45,7 +45,7 @@ GOOGLE_CLIENT_SECRET =
 - Type `docker system prune -a -f`. This will clean and remove everything.
 
 ## 5. Errors
-I encountered difficulties deploying the Flask application. When accessing the Flask application's URL, only the home page and contact page are visible by directly typing in their routes. Unfortunately, the doctors page is only accessible locally and is not visible on the deployed site. To view the screenshots, click [here](https://github.com/Beczheng/flask_e2e_project/tree/main/docs).
+I encountered difficulties deploying the Flask application. When accessing the Flask application's URL, only the home page and contact page are visible by directly typing in their routes. Unfortunately, the doctors page is only accessible locally and is not visible on the deployed site. To view the screenshots of my Flask application, click [here](https://github.com/Beczheng/flask_e2e_project/tree/main/docs).
 
 Once you've logged in through Google, it will bring you to this page:
 
