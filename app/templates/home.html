@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><b>Hospital Database</b></h1> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/home" class="hover:underline">Home</a></li>
+            <li><a href="{{url_for('doctors')}}" class="hover:underline">Doctors</a></li>
+            <li><a href="/contact" class="hover:underline">Contact</a></li>
+            <li><a href="/dashboard" class="hover:underline">User Info</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}
+
+    <br>
+    <main>
+        <h2><b>Tables: Features</b></h2>
+        <p>First Name | Last Name | Date of Birth | Address | Phone Number | Specialization</p> 
+        <br>
+        <h2><b>Tables: Specializations</b></h2>
+        <p>Cardiology | Dermatology | Endocrinology | Gastroenterology</p> 
+    </main>
+    
+    {% endblock %}
+
+    <div>
+        <a href="{{url_for('logout')}}" class="logout-btn" style="text-decoration:none;">
+            <div class="logout-btn-text"> 
+                Logout
+            </div>
+        </a> 
+    </div>
+</body>
+</html>

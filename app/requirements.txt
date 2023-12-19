@@ -1,0 +1,11 @@
+authlib
+Faker
+Flask
+Flask-Session
+Flask-SQLAlchemy
+oauth2client
+oauthlib
+pymysql
+python-dotenv
+requests
+sentry-sdk
