@@ -49,10 +49,9 @@ I encountered difficulties deploying the Flask application. When accessing the F
 
 Once you've logged in through Google, it will bring you to this page:
 
+![Screenshot 2023-12-18 224934](https://github.com/Beczheng/flask_e2e_project/assets/123920253/1437a162-b7b5-4738-a74c-6f2637e85ade)
 
-
-
-Then, enter the following routes:
+Then, on this page, enter the following routes:
 - https://beckieflaskapp.azurewebsites.net/home (does work)
 - https://beckieflaskapp.azurewebsites.net/doctors (does not work, only works locally)
 - https://beckieflaskapp.azurewebsites.net/contact (does work)
