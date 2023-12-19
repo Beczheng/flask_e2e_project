@@ -28,7 +28,6 @@ DB_CHARSET =
 
 GOOGLE_CLIENT_ID = 
 GOOGLE_CLIENT_SECRET = 
-
 ```
 
 ## 4. Docker (Steps)
