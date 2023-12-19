@@ -27,7 +27,7 @@ engine = create_engine(conn_string, echo=False)
 fake = Faker()
 
 # Create a function to insert fake data into tables
-def insert_fake_data(engine, table_name, specialization, num_doctors=7):
+def insert_fake_data(engine, table_name, specialization, num_doctors=10):
     with engine.connect() as connection:
         for _ in range(num_doctors):
             

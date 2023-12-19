@@ -3,6 +3,7 @@ import sqlite3
 # Initialize the database
 DATABASE = 'users.db'
 
+# Create table for users
 def get_db():
     db = sqlite3.connect(DATABASE)
     cursor = db.cursor()
@@ -18,6 +19,7 @@ def get_db():
     db.commit()
     return db
 
+# Create or update user info
 def update_or_create_user(user_info):
     db = get_db()
     cursor = db.cursor()
