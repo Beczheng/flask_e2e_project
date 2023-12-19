@@ -15,7 +15,7 @@ My Flask application serves as a platform for presenting information about docto
 - **Microsoft Azure:** Deployment 
 - **MySQL Workbench:** Database via Azure
 - **Sentry.io:** Debugging and logging
-- **Tailwind:**: Frontend styling
+- **Tailwind:** Frontend styling
 
 ## 3. Template of .Env File
 
